@@ -12,9 +12,11 @@ Examples:
 from django.contrib import admin
 from django.urls import path, include
 
-'''URLPATTERNS GERAL FICA SÓ COM O ADMIN E COM O PATH PRINCIPAL DE CADA APP'''
+"""URLPATTERNS GERAL FICA SÓ COM O ADMIN E COM O PATH PRINCIPAL DE CADA APP"""
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/pets/', include('pet.urls')), # inclui tudo que tiver dentro da urlpatters do app pet
-    path('api/adocoes/', include('adocao.urls'))
+    path("admin/", admin.site.urls),
+    path(
+        "api/pets/", include("pet.urls")
+    ),  # inclui tudo que tiver dentro da urlpatters do app pet
+    path("api/adocoes/", include("adocao.urls")),
 ]

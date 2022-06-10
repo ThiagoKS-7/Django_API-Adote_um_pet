@@ -5,8 +5,14 @@
 from rest_framework import serializers
 from .models import Pet
 
+
 class PetSerializer(serializers.ModelSerializer):
-    #configurações iniciais com uma metaclass
+    # configurações iniciais com uma metaclass
     class Meta:
-       model = Pet # validações vão se basear no modelo
-       fields = ('id', 'nome', 'historia', 'foto') # tupla doq vai retornar na response
+        model = Pet  # validações vão se basear no modelo
+        fields = (
+            "id",
+            "nome",
+            "historia",
+            "foto",
+        )  # tupla doq vai retornar na response
