@@ -21,4 +21,3 @@ class AdocaoSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         validated_data["pet"] = validated_data.pop("pet_id")
         return super().create(validated_data)
-
