@@ -1,4 +1,4 @@
-# Adote um Pet
+# Adote um Pet - API Django
 
 ![GitHub](https://img.shields.io/badge/License-MIT-red)
 ![Github InDev](https://img.shields.io/badge/project-in%20development-green)
